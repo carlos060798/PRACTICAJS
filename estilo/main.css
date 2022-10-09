@@ -220,7 +220,7 @@ footer{
   }
 }
 
-@media (min-width: 976gitpx){
+@media (min-width: 976px){
   .a{
     color: white;
   }
@@ -234,6 +234,7 @@ footer{
 
   .cards{
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 80px;
   }

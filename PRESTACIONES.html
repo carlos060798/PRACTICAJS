@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/main.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/prestaciones.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+          <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" class="enlace">
+                <img src="icon/calculadora.png" alt="" class="logo">MITRABAJO
+            </a>
+            <ul>
+              <li><a class="active" href="index.html">Inicio</a></li>
+              <li><a href="recargos.html">Recargos</a></li>
+              <li><a href="PRESTACIONES.html">Prestaciones</a></li>
+              <li><a href="normativa.html">Normativa</a></li>
+            </ul>
+        </nav>
+        </div>
+      </header>
+    <main>
+        <div class="contendordos">
+            <section class="formulario">
+          
+                <div  class="form">
+                    <form class="form_contenedor">
+                        <h3><img src="icon/calculadora.png" class="icon_form">Horas Extras</h3>
+                        <label for="salario" class="label">Cual es su salario:</label>                       
+                        <input type="number" id="salario" class=" salario input" img="icon/eliminar.svg">
+                        <label for="dias"class="label"> Cuantas horas extras</label>
+                        <input type="number" id="dias" class="input ">
+                        <label for="hora"class="label"> Tipo de hora trabajada</label>
+                        <select type="text" id="hora" class="input">
+                            <option></option>
+                            <option>recargo Nocturno</option>
+                            <option>Diurna</option>
+                            <option>Extra Nocturno</option>
+                            <option>festivo</option>
+                            <option>Diurna Festiva</option>
+                            <option>Nocturna Festiva</option>
+                            <option>Recargo Nocturno Festivo</option>
+                        </select> 
+                        <div class="botones"> 
+                         <button  id="calcular" class=" btn_dos">Calcular</button>
+                         <button  type="reset"  class=" btn_dos"><img src="icon/eliminar.svg" alt=""> </button>
+                        </div>
+                        <label for="total" class="label hora"> $ VALOR DE HORAS</label>
+                        <p  id="resultado"class="input resultados" >
+
+                    </form>
+                </div>
+            </section>
+            <section class="contenedor_table">
+                <table>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="table">Tipo de hora extra</th>
+                        <th scope="col" class="table">Porcentaje de recargo.</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" >Extra diurno</th>
+                        <td>25%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="oscuro">Trabajo extra nocturno	</th>
+                        <td class="oscuro">75%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Trabajo extra diurno</th>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="oscuro" >Trabajo extra nocturno en domingos y festivos</th>
+                        <td class="oscuro">150%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Trabajo nocturno</th>
+                        <td>35%</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" class="oscuro">Trabajo dominical y festivo	</th>
+                        <td class="oscuro">75%</td>
+                      </tr> 
+                      <tr> 
+                        <tr>
+                            <th scope="row" >Trabajo nocturno en dominical y festivo	</th>
+                            <td>110%</td>
+                          </tr>
+                          
+                    </tbody>
+                  </table>
+            </section>
+        
+
+            </form>
+        </section>
+        <section class="info">
+            <div class="info_pregunta">
+                <h4>Que son las cesantias?</h4>
+                <p>es una prestación social en favor de los trabajadores que periódicamente se debe liquidar, y en
+                    algunos casos las cesantías se van provisionando mensual o quincenalmente, pero en determinados
+                    casos hay que hacer una liquidación definitiva.</p>
+            </div>
+            <div class="info_pregunta">
+                <h4>Que son los interes de la cesantias?</h4>
+                <p>Es la utilidad sobre el valor de las cesantías acumuladas al 31 de diciembre que corresponde al
+                    12 %. Este monto se debe entregar directamente a los trabajadores antes del 31 de enero</p>
+            </div>
+            <div class="info_pregunta">
+                <h4>Que es la prima de servicos?</h4>
+                <p>Es una prestación social a cargo del empleador, que corresponde a 30 días de salario por año, el
+                    cual se reconoce en dos pagos, así: medio salario que debe pagarse máximo el 30 de junio y otro
+                    medio salario que debe pagarse máximo el 20 diciembre</p>
+            </div>
+            <div class="info_pregunta fin">
+                <h4>Que son las vacaciones?</h4>
+                <p>Las vacaciones laborales son el descanso a que todo trabajador tiene derecho, luego de haber
+                    laborado durante el tiempo que la ley considera.En el caso de las vacaciones laborales, el
+                    descanso debe ser remunerado, de manera que el trabajador sigue recibiendo a pesar de no estar
+                    laborando.</p>
+            </div>
+            
+        </section>
+    </div>
+    </main>
+    <footer class="footer">
+      <div class="contenedorr_fototer">
+        <div class="footerflex">
+          <img src="icon/calculadora.png" alt="" class="logo">
+          <h2 class="titulo_logo">Mitrabajo</h2>
+        </div>
+        <div class="red">
+          <img src="icon/facebook.svg" alt="" class="icon  I1">
+          <img src="icon/linkeding.svg" alt=""  class="icon I2">
+  
+        </div>
+        <h3 class="derechos">@Derechos Reservados a danilo </h3>
+      </div>
+    </footer>
+<script src="horas.js"></script>
+</body>

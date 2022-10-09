@@ -1,0 +1,247 @@
+*{
+  margin: 0;
+  box-sizing: border-box; 
+  --color1: #233EF3;
+}
+
+header{
+  background: var(--color1);
+}
+.contenedor{
+  width: 90%;
+  margin: 0 auto;
+}
+nav{
+
+  height: 80px;
+  width: 100%;
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(228, 217, 217);
+  font-size: 25px;
+}
+
+
+.logo{
+  width: 30px;
+  height: 28px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(238, 231, 231);
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+ li a:hover{
+  background: white;
+  transition: .5s;
+  color: black;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(2, 2, 2);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+ 
+/*main*/
+.contenedor_main{
+  width: 90%;
+  margin: 0 auto;
+}
+.titulo_main{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(5, 5, 5);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cards{
+  margin-bottom: 70px;
+}
+.card{
+ text-align: center;
+ border: 2px solid blue;
+ border-radius: 30px;
+ width: 300px;
+ height: 260px;
+ margin: 0 auto;
+}
+
+
+
+#uno{
+  margin-bottom: 30px;
+}
+
+.card_img{
+    margin-top: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+
+  
+}
+.titulo_card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.btn{
+  background:var(--color1);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 30px;
+}   
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+.btn:hover{
+  background-color: var(--color1);
+ 
+ 
+}
+
+ 
+
+/*footer*/
+footer{
+  margin-top: 0;
+}
+.footer{
+  background:var(--color1);
+  display: flex;
+  flex-direction:column;
+}
+
+
+.contenedorr_fototer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footerflex{
+  display: flex;
+  justify-content: center;
+
+}
+.redes{
+  justify-content: center;
+}
+.redes img{
+  width: 24px;
+  height: 24px;
+}
+.titulo_logo{
+  color: white;
+}
+.red{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+}
+.icon{
+  width: 32px;
+  height: 32px;
+}
+
+.I1{
+  background: white;
+}.I2{
+  margin-left: 10px;
+  background: white;
+}
+.derechos{
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 800px){
+
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:white;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+      color: black;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
+
+@media (min-width: 976gitpx){
+  .a{
+    color: white;
+  }
+ 
+  
+  
+  .logo{
+    width: 36px;
+    height: 36px;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+  }
+  .card{
+    margin: 30px;
+  }
+  .card:hover{
+    transform: scale(1.2);
+  }
+}
+

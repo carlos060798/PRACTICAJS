@@ -1,0 +1,62 @@
+.form{
+  width: 300px;
+  height: 470px;
+}
+.p{
+  margin-bottom: 10px;
+}
+.l2{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: oblique;
+
+}
+
+@media (min-width:600px){
+ 
+  .icon_form{
+    width: 25px;
+    height: 25px;
+    background: white;
+  }
+  .form{
+  width: 400px;
+  height: 450px;
+  }
+  h3{
+  font-size: 25px;
+}
+  .info_pregunta h4{
+    font-size: 1.5rem;
+  }
+  .p{
+   
+    font-size: 1.2rem;
+  
+  }
+}
+
+@media (min-width:900) {
+ 
+  .icon_form{
+    width: 30ppx;
+    height: 30px;
+    background: white;
+  }
+  .form{
+  width: 500px;
+  height: 550px;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .info_pregunta h4{
+    font-size: 2rem;
+  }
+  .p{
+    font-size: 1.5rem;
+  
+  }
+}
+
